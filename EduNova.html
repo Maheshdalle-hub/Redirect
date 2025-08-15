@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      window.onload = function () {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Check if the user is on Android/iOS and open in Chrome
+        if (/android/i.test(userAgent)) {
+          window.location.href =
+            "intent://edunova-pw.site/#Intent;package=com.android.chrome;scheme=https;end";
+        } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+          window.location.href = "googlechrome://EduNova-pw.site";
+        } else {
+          // Default behavior for desktop or other devices
+          window.location.href = "https://EduNova-Pw.site";
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+    <p>If you're not redirected automatically, then refresh the page and click on continue to chrome.</p>
+  </body>
+</html>
