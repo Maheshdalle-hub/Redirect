@@ -11,7 +11,7 @@
         // Check if the user is on Android/iOS and open in Chrome
         if (/android/i.test(userAgent)) {
           window.location.href =
-            "intent://edunova-pw.vercel.app/api/index.php/#Intent;package=com.android.chrome;scheme=https;end";
+            "intent://edunova-pw.vercel.app/api/index.php#Intent;package=com.android.chrome;scheme=https;end";
         } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
           window.location.href = "googlechrome://edunova-pw.vercel.app/api/index.php";
         } else {
